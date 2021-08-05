@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hacer receta - Cooky</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/makeRecipe.css">
+        <link rel="shortcut icon" href="CSS/media/Icono1.png">
+    </head>
+    <body>
+        <h1 id="cabecera">
+            <img src="CSS/media/cookin (3).png" id="image1" onclick="document.location='principal.html'">
+            <button class="button" id="home" onclick="document.location='principal.html'">Inicio</button>
+        </h1>
+        <form id="form1">
+            
+            <div id="block1">
+                <label class="text">Titulo</label>
+                <br>
+                <input class="text1" type="text" id="title" placeholder="Ingresa el titulo de tu receta aqui...">
+                <label class="text">Ingredientes</label>
+
+                <br>
+                <br>
+                <div id="block1_2">
+                    <label class="text2">Cantidad</label>
+                    <input type='text' id='amount' class="text2">
+
+                    <label class="text2">Unidad</label>
+                    <select class="text2" id="unidades" name="unidades" class="selector2">
+                        <option value="selecciona">Unidades</option>
+                        <option value="grams">Gramo</option>
+                        <option value="kilo">Kilogramo</option>
+                        <option value="litro">Litro</option>
+                        <option value="libra">Libra</option>
+                    </select>
+
+                    <label class="text2">Nombre</label>
+                    <input type="text" id="name" class="text2">
+
+                    <button>añadir</button>
+                </div>
+
+                <br>
+                <br>
+
+                <label class="text">Instrucciones</label>
+                <textarea class="text1" type="text" id="intructions" placeholder="Indica las intrucciones aqui..."></textarea>
+            </div>
+            
+            <div id="block2">
+                <label class="text">Categoria</label>
+                <br>
+                <select class="selector" id='categories' name='categories'>
+                    <option value="Selecciona">Seleccionar</option>
+                    <option value="mainCourse">Pastas</option>
+                    <option value="fish">Mariscos</option>
+                    <option value="dessert">Postres</option>   
+                </select>
+
+                <label class="text">Dificultad</label>
+                <select class="selector" id="dificulties" name="dificulties">
+                    <option value="select">Seleccionar</option>
+                    <option value="easy">Facil</option>
+                    <option value="med">Medio</option>
+                    <option value="hard">Dificil</option>
+                </select>
+
+                <label class="text">Tiempo de preparacion</label>
+                <select class="selector" id="time" name="cooktime">
+                    <option value="select" name="select">Seleccionar</option>
+                    <option value="first" name="first">0 - 5 minutos</option>
+                    <option value="second" name="second">5 - 15 minutos</option>
+                    <option value="third" name="third">15 - 30 minutos</option>
+                </select>
+                
+                <label class="text">Imagen( Opcional )</label>
+                <input type="image" id="imagen">
+            </div>
+
+        </form>
+        <button class="button" id="button1" onclick="document.location='readRecipe.html'">Guardar</button>
+        <script src="" async defer></script>
+    </body>
+</html>
